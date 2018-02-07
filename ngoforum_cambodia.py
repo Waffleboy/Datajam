@@ -102,8 +102,8 @@ def handle_error(func_name,table_counter,a_tag_counter):
 soup = obtain_soup(TABLE_URL)
 tbody = soup.find_all("tbody")
 
-results = ["name","description","website","cause_area","programme_types",\
-           "address","country","city","contact_number","email","contact_person"]
+results = [["name","description","website","cause_area","programme_types",\
+           "address","country","city","contact_number","email","contact_person"]]
 
 for table in tbody:
     a_tags = table.find_all('a')
